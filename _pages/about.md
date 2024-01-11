@@ -8,7 +8,7 @@ author_profile: true
 
 <br/>
 
-I am a student in PhD Economics program at the University College London. Prior to that, I was a research assistant at the Behavioral and Data Science Research Center, National Taiwan University, and received my Master's degree in Economics from National Taiwan University.
+I am a student in the PhD Economics program at the University College London. My research interests lie in econometric theory and statistics, with a specific focus on causal inference. Prior to that, I was a research assistant at the Behavioral and Data Science Research Center at National Taiwan University and received my Master's degree in Economics from National Taiwan University.
 
 ---------------------------------------
 
