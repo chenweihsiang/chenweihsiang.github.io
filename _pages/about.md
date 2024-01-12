@@ -16,5 +16,5 @@ I am a student in the PhD Economics program at the University College London. My
 &nbsp;&nbsp; • &nbsp; Causal machine learning\
 &nbsp;&nbsp; • &nbsp; High-dimensional causal inference\
 &nbsp;&nbsp; • &nbsp; Matrix completion and synthetic control\
-&nbsp;&nbsp; • &nbsp; Quantile and distribution methods\
+&nbsp;&nbsp; • &nbsp; Quantile and distribution methods
 
