@@ -44,7 +44,14 @@ author_profile: true
 
 
 
-## Research Experience & Fellowship
+## Award & Fellowship
+**PhD Scholar, Centre for Microdata Methods and Practice (CeMMAP), 2023 -**\
+**Best Newcomer Teaching Assistant, Department of Economics, University College London, 2023**\
+**Asia-Pacific Economic Cooperation (APEC) - Healthy Women, Healthy Economies Research Prize, 2021**
+
+
+
+## Research Experience
 
 **Centre for Microdata Methods and Practice (CeMMAP)**\
 *PhD Scholar, 2023 -*
@@ -65,6 +72,7 @@ Research Project:\
 
 
 ## Teaching Experience
+
 **Department of Economics, University College London**\
 *Postgraduate Teaching Assistant, 2022 -*\
 &nbsp;&nbsp; • &nbsp; ECON0064: MSc Econometrics\
@@ -76,12 +84,6 @@ Research Project:\
 &nbsp;&nbsp; • &nbsp; ECON4035: BA International Economics Principle\
 &nbsp;&nbsp; • &nbsp; ECON1004: BA Principle of Economics (I)\
 &nbsp;&nbsp; • &nbsp; ECON1006: BA Economics (I)
-
-
-
-## Award
-**Best Newcomer Teaching Assistant, Department of Economics, University College London, 2023**\
-**Asia-Pacific Economic Cooperation (APEC) - Healthy Women, Healthy Economies Research Prize, 2021**
 
 
 
