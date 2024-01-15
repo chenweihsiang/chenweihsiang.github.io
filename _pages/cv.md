@@ -53,9 +53,6 @@ author_profile: true
 
 ## Research Experience
 
-**Centre for Microdata Methods and Practice (CeMMAP)**\
-*PhD Scholar, 2023 -*
-
 **Behavioral and Data Science Research Center, National Taiwan University**\
 *Research Assistant, 2019 - 2021*\
 Supervisor: Prof. Ming-Jen Lin and Prof. Shiau-Fang Chao\
