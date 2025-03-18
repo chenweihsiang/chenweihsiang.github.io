@@ -18,6 +18,3 @@ I am a student in the PhD Economics program at the University College London. My
 &nbsp;&nbsp; • &nbsp; Matrix completion and synthetic control\
 &nbsp;&nbsp; • &nbsp; Quantile and distribution methods
 
-
-
-<sub><sup>*(Last updated: March 2025)*</sup></sub>
