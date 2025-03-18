@@ -97,7 +97,7 @@ author_profile: true
 
 
 
-<sub><sup>*(Last updated: December 2024)*</sup></sub>
+<sub><sup>*(Last updated: March 2025)*</sup></sub>
 
 
 
