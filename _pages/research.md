@@ -23,7 +23,7 @@ Jau-er Chen, <ins>Chen-Wei Hsiang</ins>\
 ## Code
 
 - **PanelIFE** [[GitHub link](https://github.com/chenweihsiang/PanelIFE)]\
-R package for *Robust Estimation and Inference in Panels with Interactive Fixed Effects [(Armstrong, Weidner, and Zeleneev, 2024)](https://arxiv.org/abs/2210.06639)*\
+R package for *"Robust Estimation and Inference in Panels with Interactive Fixed Effects (Armstrong, Weidner, and Zeleneev, 2024) [[web link](https://arxiv.org/abs/2210.06639)]"*\
 **Abstract:** This package implements the estimation and inference procedure for panel data with interactive fixed effects. This package provides two different method for estimation: one is the commonly used linear panel data model estimation procedure, and another one is the bias-aware estimation procedure that allows weak factors.
 
 
