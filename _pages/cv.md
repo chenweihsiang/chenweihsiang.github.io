@@ -46,7 +46,7 @@ author_profile: true
 ## Research Experience
 
 **Department of Economics, University College London**\
-*Research Assistant (to Dr. Andrei Zeleneev and Prof. Martin Weidner), 2023 -*\
+*Research Assistant (to Dr. Andrei Zeleneev and Prof. Martin Weidner), 2024*\
 &nbsp;&nbsp; • &nbsp; Project on Weak Factors: Writing R package and corresponding vignette for method in panels with factor structure
 
 **Behavioral and Data Science Research Center, National Taiwan University**\
