@@ -32,3 +32,4 @@ R package for *"Robust Estimation and Inference in Panels with Interactive Fixed
 
 
 
+<sub><sup>*(Last updated: March 2025)*</sup></sub>
