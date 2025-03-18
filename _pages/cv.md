@@ -33,7 +33,7 @@ author_profile: true
 ## Publication, Working Paper & Work in Progress
 
 <span style="font-size:large;">**Work in Progress**</span>\
-&nbsp;&nbsp; • &nbsp; **Doubly Robust Counterfactual Estimation with Matrix Completion** (with Andrei Zeleneev)\
+&nbsp;&nbsp; • &nbsp; **Inferring Treatment Effects in Large Panels by Uncovering Latent Similarities** (with Ben Deaner and Andrei Zeleneev)\
 &nbsp;&nbsp; • &nbsp; **Event Study with Time-Adjusted Synthetic Control**
 
 <span style="font-size:large;">**Publication**</span>\
