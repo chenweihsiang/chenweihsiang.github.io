@@ -8,7 +8,7 @@ author_profile: true
 
 ## Work in Progress
 
-- **Doubly Robust Counterfactual Estimation with Matrix Completion** (with Andrei Zeleneev)
+- **Inferring Treatment Effects in Large Panels by Uncovering Latent Similarities** (with Ben Deaner and Andrei Zeleneev)
 - **Event Study with Time-Adjusted Synthetic Control**
 
 
