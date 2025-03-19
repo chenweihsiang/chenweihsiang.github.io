@@ -10,6 +10,7 @@ author_profile: true
 
 - **Inferring Treatment Effects in Large Panels by Uncovering Latent Similarities** (with [Ben Deaner](https://bendeaner.wordpress.com/) and [Andrei Zeleneev](https://www.azeleneev.com/))
 - **Event Study with Time-Adjusted Synthetic Control**
+- <a href="https://www.google.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">custom link</a>
 
 
 ## Publication
