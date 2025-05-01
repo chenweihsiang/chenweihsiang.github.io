@@ -30,7 +30,7 @@ author_profile: true
 
 <h2>Research Interest</h2>
 
-<ul>
+<ul style="margin: 0;">
 <li>Causal Machine Learning</li>
 <li>High-Dimensional Causal Inference</li>
 <li>Matrix Completion and Synthetic Control</li>
@@ -42,7 +42,7 @@ author_profile: true
 <h2>Publication, Working Paper & Work in Progress</h2>
 
 <h3>Working Paper & Work in Progress</h3>
-<ul>
+<ul style="margin: 0;">
 <li>
 <strong>Inferring Treatment Effects in Large Panels by Uncovering Latent Similarities</strong><br/>
 (with Ben Deaner and Andrei Zeleneev)
@@ -53,7 +53,7 @@ Event Study with Time-Adjusted Synthetic Control
 </ul>
 
 <h3>Publication</h3>
-<ul>
+<ul style="margin: 0;">
 <li>
 <strong>Causal Random Forests Model Using Instrumental Variable Quantile Regression</strong><br/>
 <strong><em>Econometrics</em>, 2019, 7(4), 1-22.</strong><br/>
