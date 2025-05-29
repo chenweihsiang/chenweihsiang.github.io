@@ -9,7 +9,7 @@ author_profile: true
 <html>
 <head>
 <style>
-.collapsible {padding: 0.5em; background-color: #D8DEE9; border: none; border-radius: 0.3em; text-align: left; font-size: 0.8em; font-weight: bold; margin: 0.5em 0; position: relative; left: 0em;}
+.collapsible {padding: 0.5em; background-color: #81A1C1; border: none; border-radius: 0.3em; text-align: left; font-size: 0.8em; font-weight: bold; margin: 0.5em 0; position: relative; left: 0em;}
 .content {padding: 0 0.4em; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; background-color: transparent; font-size: 0.8em; margin-bottom: 0.75em; position: relative; left: 0em;}
 </style>
 </head>
