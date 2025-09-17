@@ -20,11 +20,11 @@ author_profile: true
 <strong>University College London</strong><br/>
 &emsp; <em>MPhil/PhD in Economics, 2022 -</em><br/>
 <strong>University College London</strong><br/>
-&emsp; <em>MRes in Economics, 2022 -</em><br/>
+&emsp; <em>MRes in Economics, 2022</em><br/>
 <strong>National Taiwan University</strong><br/>
-&emsp; <em>M.A. in Economics, 2019 -</em><br/>
+&emsp; <em>M.A. in Economics, 2019</em><br/>
 <strong>National Taipei University</strong><br/>
-&emsp; <em>B.A. in Economics, 2017 -</em><br/>
+&emsp; <em>B.A. in Economics, 2017</em><br/>
 
 <!-- -------------------------------------- -->
 
