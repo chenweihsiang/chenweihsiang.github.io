@@ -45,7 +45,9 @@ author_profile: true
 <ul style="margin: 0;">
 <li>
 <strong>Inferring Treatment Effects in Large Panels by Uncovering Latent Similarities</strong><br/>
-(with Ben Deaner and Andrei Zeleneev)
+<strong><em>arXiv working paper</em>, 2025</strong><br/>
+Ben Deaner, <ins>Chen-Wei Hsiang</ins><br/>, Andrei Zeleneev
+<strong>Abstract:</strong> The presence of unobserved confounders is one of the main challenges in identifying treatment effects. In this paper, we propose a new approach to causal inference using panel data with large N and T. Our approach imputes the untreated potential outcomes for treated units using the outcomes for untreated individuals with similar values of the latent confounders. In order to find units with similar latent characteristics, we utilize long pre-treatment histories of the outcomes. Our analysis is based on a nonparametric, nonlinear, and nonseparable factor model for untreated potential outcomes and treatments. The model satisfies minimal smoothness requirements. We impute both missing counterfactual outcomes and propensity scores using kernel smoothing based on the constructed measure of latent similarity between units, and demonstrate that our estimates can achieve the optimal nonparametric rate of convergence up to log terms. Using these estimates, we construct a doubly robust estimator of the period-specifc average treatment effect on the treated (ATT), and provide conditions, under which this estimator is root-N-consistent, and asymptotically normal and unbiased. Our simulation study demonstrates that our method provides accurate inference for a wide range of data generating processes.
 </li>
 <li>
 Event Study with Time-Adjusted Synthetic Control
