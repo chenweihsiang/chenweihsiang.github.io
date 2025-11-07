@@ -118,7 +118,7 @@ author:
   avatar           : "/assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD Student @ UCL Econ"
   location         : "London, UK"
-  email            : # "chen-wei.hsiang.21 [at] ucl.ac.uk"
+  email            : your.name@email.com # "chen-wei.hsiang.21 [at] ucl.ac.uk"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
