@@ -139,7 +139,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-footer_scripts: # This is for making assets/js/copy-email.js to work
+footer_scripts: # This is for making assets/js/copy-email.js and assets/css/custom.css to work
   - /assets/js/copy-email.js
 
 # Site Footer
