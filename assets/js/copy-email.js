@@ -1,7 +1,7 @@
 // Copy-on-click + inline "copied" label next to the icon
 (function () {
   const EMAIL = "chen-wei.hsiang.21@ucl.ac.uk";   // <— put yours here
-  const LABEL_TEXT = "(email address copied)";
+  const LABEL_TEXT = "(Email address copied)";
   const LABEL_LIFETIME = 1400; // ms
 
   function fallbackCopy(text) {
