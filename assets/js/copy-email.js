@@ -1,9 +1,10 @@
-// Copies a hard-coded email when the "Email" icon/link is clicked
+// Copy-on-click + inline "copied" label next to the icon
 (function () {
-  const EMAIL = "chen-wei.hsiang.21@ucl.ac.uk";   // <- put yours here
-  const FLASH_MS = 900;
+  const EMAIL = "chen-wei.hsiang.21@ucl.ac.uk";   // <— put yours here
+  const LABEL_TEXT = "copied";
+  const LABEL_LIFETIME = 1400; // ms
 
-  function legacyCopy(text) {
+  function fallbackCopy(text) {
     const ta = document.createElement("textarea");
     ta.value = text;
     ta.setAttribute("readonly", "");
@@ -18,20 +19,43 @@
   document.addEventListener("click", async (e) => {
     const link = e.target.closest('a[href="#copy-email"]');
     if (!link) return;
+
     e.preventDefault();
 
     try {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(EMAIL);
       } else {
-        legacyCopy(EMAIL);
+        fallbackCopy(EMAIL);
       }
-      // quick visual cue (optional)
+
+      // tiny motion on the icon/link
       link.classList.add("copied");
-      setTimeout(() => link.classList.remove("copied"), FLASH_MS);
+      setTimeout(() => link.classList.remove("copied"), 180);
+
+      // show (or reuse) an inline label after the link
+      let label = link.nextElementSibling;
+      if (!label || !label.classList.contains("copied-label")) {
+        label = document.createElement("span");
+        label.className = "copied-label";
+        label.textContent = LABEL_TEXT;
+        link.insertAdjacentElement("afterend", label);
+        // allow transition
+        requestAnimationFrame(() => label.classList.add("show"));
+      } else {
+        // retrigger animation if it already exists
+        label.textContent = LABEL_TEXT;
+        label.classList.remove("show");
+        void label.offsetWidth; // reflow to restart transition
+        label.classList.add("show");
+      }
+
+      clearTimeout(label._hideTimer);
+      label._hideTimer = setTimeout(() => {
+        label.classList.remove("show");
+      }, LABEL_LIFETIME);
     } catch {
-      // As a last resort, show the email so the user can copy manually
-      alert(EMAIL);
+      alert(EMAIL); // last-resort fallback
     }
   });
 })();
