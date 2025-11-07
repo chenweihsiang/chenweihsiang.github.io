@@ -1,12 +1,35 @@
 <!-- start custom head snippets -->
 <style>
-  /* brief “pop” + tint on the whole link */
-  a.copied {
-    filter: brightness(0.85);
-    transform: scale(0.96);
-    transition: transform 120ms ease, filter 120ms ease;
+  /* quick pop on the icon/link (good for icon-only buttons) */
+  a[href="#copy-email"] { transition: transform 120ms ease, filter 120ms ease; }
+  a[href="#copy-email"].copied { transform: scale(0.94); filter: brightness(0.9); }
+
+  /* inline "copied" label that appears next to the icon */
+  .copied-label {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.45rem;
+    font-size: 0.85rem;
+    line-height: 1;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.08);
+    color: inherit;
+    opacity: 0;
+    transform: translateY(-2px);
+    transition: opacity 160ms ease, transform 160ms ease;
+    white-space: nowrap;
+  }
+  .copied-label.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* respects reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    a[href="#copy-email"], .copied-label { transition: none; transform: none; }
   }
 </style>
+
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
