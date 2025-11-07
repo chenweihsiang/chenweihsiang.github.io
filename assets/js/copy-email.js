@@ -1,7 +1,8 @@
-// Copy a hard-coded email and show a quick "copied" message
+// Copy a hard-coded email and show an inline "Email address copied" label
 (function () {
-  const EMAIL = "your.name@email.com";
-  const TOAST_LIFETIME = 1400; // ms
+  const EMAIL = "chen-wei.hsiang.21@ucl.ac.uk";
+  const LIFETIME = 1600; // ms
+  const LABEL_TEXT = "Email address copied";
 
   function copy(text) {
     if (navigator.clipboard && window.isSecureContext) {
@@ -19,71 +20,48 @@
     return Promise.resolve();
   }
 
-  function ensureLiveRegion() {
-    let lr = document.getElementById("sr-copy-announcer");
-    if (!lr) {
-      lr = document.createElement("div");
-      lr.id = "sr-copy-announcer";
-      lr.setAttribute("aria-live", "polite");
-      lr.setAttribute("role", "status");
-      lr.style.position = "absolute";
-      lr.style.width = "1px";
-      lr.style.height = "1px";
-      lr.style.padding = "0";
-      lr.style.overflow = "hidden";
-      lr.style.clip = "rect(0 0 0 0)";
-      lr.style.whiteSpace = "nowrap";
-      lr.style.border = "0";
-      document.body.appendChild(lr);
+  function showInlineLabel(link) {
+    // Reuse existing label if it’s already there
+    let label = link.nextElementSibling;
+    if (!label || !label.classList.contains("copy-inline-label")) {
+      label = document.createElement("span");
+      label.className = "copy-inline-label";
+      label.setAttribute("aria-live", "polite");
+      label.textContent = LABEL_TEXT;
+
+      // Insert right after the link
+      link.insertAdjacentElement("afterend", label);
+
+      // trigger fade-in
+      requestAnimationFrame(() => label.classList.add("show"));
+    } else {
+      // If it exists, just reset text & animation
+      label.textContent = LABEL_TEXT;
+      label.classList.remove("show");
+      // allow reflow so transition re-triggers
+      void label.offsetWidth;
+      label.classList.add("show");
     }
-    return lr;
-  }
 
-  function showToastNear(el, text) {
-    const toast = document.createElement("span");
-    toast.className = "copy-toast";
-    toast.textContent = text;
+    // underline flash on the icon itself (optional)
+    link.classList.add("copied");
+    setTimeout(() => link.classList.remove("copied"), LIFETIME);
 
-    // Position near the element
-    const rect = el.getBoundingClientRect();
-    toast.style.left = `${rect.left + rect.width / 2}px`;
-    toast.style.top = `${rect.top - 8 + window.scrollY}px`;
-
-    document.body.appendChild(toast);
-
-    // Trigger animation
-    requestAnimationFrame(() => toast.classList.add("show"));
-
-    // Remove after a moment
-    setTimeout(() => {
-      toast.classList.remove("show");
-      toast.addEventListener("transitionend", () => toast.remove(), { once: true });
-    }, TOAST_LIFETIME);
+    // remove label after a moment
+    clearTimeout(label._hideTimer);
+    label._hideTimer = setTimeout(() => {
+      label.classList.remove("show");
+      label.addEventListener("transitionend", () => label.remove(), { once: true });
+    }, LIFETIME);
   }
 
   document.addEventListener("click", function (e) {
     const link = e.target.closest('a[href="#copy-email"]');
     if (!link) return;
-
     e.preventDefault();
 
-    copy(EMAIL).then(() => {
-      // Visual toast
-      showToastNear(link, "Email address copied");
-
-      // Optional: tiny underline flash on the icon link itself
-      const oldTitle = link.getAttribute("title") || "";
-      link.setAttribute("title", "Copied!");
-      link.classList.add("copied");
-      setTimeout(() => {
-        link.setAttribute("title", oldTitle);
-        link.classList.remove("copied");
-      }, 1200);
-
-      // Screen readers
-      ensureLiveRegion().textContent = "Email address copied";
-    }).catch(() => {
-      alert(EMAIL);
-    });
+    copy(EMAIL)
+      .then(() => showInlineLabel(link))
+      .catch(() => alert(EMAIL));
   });
 })();
