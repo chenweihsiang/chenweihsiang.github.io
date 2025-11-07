@@ -118,11 +118,11 @@ author:
   avatar           : "/assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD Student @ UCL Econ"
   location         : "London, UK"
-  email            : # "chen-wei.hsiang.21 [at] ucl.ac.uk"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "#copy-email" # "mailto:your.name@email.com"
+      url: "#copy-email" # To change email address, edit assets/js/copy-email.js # Originally is "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -139,7 +139,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-footer_scripts:
+footer_scripts: # This is for making assets/js/copy-email.js to work
   - /assets/js/copy-email.js
 
 # Site Footer
