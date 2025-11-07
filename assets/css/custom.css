@@ -1,0 +1,32 @@
+/* Underline flash on the link */
+a.copied { text-decoration: underline; }
+
+/* Floating toast near the icon */
+.copy-toast {
+  position: absolute;
+  transform: translate(-50%, -6px);
+  padding: 6px 10px;
+  font-size: 0.875rem;
+  line-height: 1;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 160ms ease, transform 160ms ease;
+  z-index: 9999;
+  white-space: nowrap;
+}
+.copy-toast.show {
+  opacity: 1;
+  transform: translate(-50%, -12px);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .copy-toast,
+  .copy-toast.show {
+    transition: none;
+    transform: translate(-50%, -8px);
+  }
+}
