@@ -30,8 +30,13 @@ author_profile: true
 The presence of unobserved confounders is one of the main challenges in identifying treatment effects. In this paper, we propose a new approach to causal inference using panel data with large N and T. Our approach imputes the untreated potential outcomes for treated units using the outcomes for untreated individuals with similar values of the latent confounders. In order to find units with similar latent characteristics, we utilize long pre-treatment histories of the  outcomes. Our analysis is based on a nonparametric, nonlinear, and nonseparable factor model for untreated potential outcomes and treatments. The model satisfies minimal smoothness requirements. We impute both missing counterfactual outcomes and propensity scores using kernel smoothing based on the constructed measure of latent similarity between units, and demonstrate that our estimates can achieve the optimal nonparametric rate of convergence up to log terms. Using these estimates, we construct a doubly robust estimator of the period-specifc average treatment effect on the treated (ATT), and provide conditions, under which this estimator is root-N-consistent, and asymptotically normal and unbiased. Our simulation study demonstrates that our method provides accurate inference for a wide range of data generating processes.
 </div>
 </li>
+
 <li>
-<strong>Event Study with Time-Adjusted Synthetic Control</strong>
+<strong>Event Study with Time-Adjusted Synthetic Control</strong><br/>
+<button class="collapsible">Abstract</button>
+<div class="content">
+This research proposes a time-adjusted synthetic control method for the event study. The proposed method utilizes a two-step approach in constructing time weights based on the factor model with interactive fixed effects and unit weights modified from the conventional synthetic control method. In the simulation study, under the data generating process with heteroscedasticity across time, the proposed method has the advantage of efficiency with large panel data.
+</div>
 </li>
 </ul>
 
@@ -62,6 +67,18 @@ R package for <em>"Robust Estimation and Inference in Panels with Interactive Fi
 <button class="collapsible">Description</button>
 <div class="content">
 PanelIFE implements the estimation and inference procedure for panel data with interactive fixed effects. This package provides two different method for estimation: one is the commonly used linear panel data model estimation procedure, and another one is the bias-aware estimation procedure that allows weak factors.
+</div>
+</li>
+</ul>
+
+
+<ul>
+<li>
+<strong>PanelLatSim</strong> [<a href="https://github.com/chenweihsiang/PanelLatSim" style="color: #5E81AC;">GitHub link</a>]<br/>
+R package for <em>"Inferring Treatment Effects in Large Panels by Uncovering Latent Similarities (Deaner, Hsiang, and Zeleneev, 2024) [<a href="https://arxiv.org/abs/2503.20769" style="color: #5E81AC;">web link</a>]"</em><br/>
+<button class="collapsible">Description</button>
+<div class="content">
+PanelLatSim implements the doubly-robust estimation and inference procedure of Deaner, Hsiang, and Zeleneev (2025) for the period-specific average treatment effect on the treated (ATT) in large panels with unobserved confounders. The untreated potential outcomes and the treatments are allowed to follow a nonparametric, nonlinear, and non-separable factor model, which is substantially more general than the additive structure imposed by two-way fixed effects and the interactive structure imposed by synthetic control and matrix completion methods. The missing counterfactual outcomes and propensity scores are imputed by kernel smoothing over a pseudo-distance that uncovers latent similarities between units from their long pre-treatment histories, and the imputed nuisances are combined into a doubly-robust estimator with cross-fitting.
 </div>
 </li>
 </ul>
