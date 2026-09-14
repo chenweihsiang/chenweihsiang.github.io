@@ -75,7 +75,7 @@ PanelIFE implements the estimation and inference procedure for panel data with i
 <ul>
 <li>
 <strong>PanelLatSim</strong> [<a href="https://github.com/chenweihsiang/PanelLatSim" style="color: #5E81AC;">GitHub link</a>]<br/>
-R package for <em>"Inferring Treatment Effects in Large Panels by Uncovering Latent Similarities (Deaner, Hsiang, and Zeleneev, 2024) [<a href="https://arxiv.org/abs/2503.20769" style="color: #5E81AC;">web link</a>]"</em><br/>
+R package for <em>"Inferring Treatment Effects in Large Panels by Uncovering Latent Similarities (Deaner, Hsiang, and Zeleneev, 2025) [<a href="https://arxiv.org/abs/2503.20769" style="color: #5E81AC;">web link</a>]"</em><br/>
 <button class="collapsible">Description</button>
 <div class="content">
 PanelLatSim implements the doubly-robust estimation and inference procedure of Deaner, Hsiang, and Zeleneev (2025) for the period-specific average treatment effect on the treated (ATT) in large panels with unobserved confounders. The untreated potential outcomes and the treatments are allowed to follow a nonparametric, nonlinear, and non-separable factor model, which is substantially more general than the additive structure imposed by two-way fixed effects and the interactive structure imposed by synthetic control and matrix completion methods. The missing counterfactual outcomes and propensity scores are imputed by kernel smoothing over a pseudo-distance that uncovers latent similarities between units from their long pre-treatment histories, and the imputed nuisances are combined into a doubly-robust estimator with cross-fitting.
