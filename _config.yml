@@ -121,7 +121,7 @@ author:
   email            : 
   links:
     - label: "Google Scholar"
-      icon: "fas fa-fw fa-google-scholar"
+      icon: "fa-brands fa-google-scholar"
       url: "https://scholar.google.com/citations?user=FVCzbl4AAAAJ"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
